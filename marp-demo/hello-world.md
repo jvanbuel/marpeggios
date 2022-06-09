@@ -1,5 +1,5 @@
 ---
-theme: gaia
+theme: uncover
 _class: lead
 paginate: true
 backgroundColor: #fff
@@ -31,4 +31,10 @@ foobar
 # Slide 2
 
 foobar
+```
+---
+
+# Slide 3
+
+
 ```

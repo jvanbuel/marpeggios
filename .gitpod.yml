@@ -1,7 +1,8 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: zsh && source $HOME/.dotfiles/.zshrc
+  - before: zsh
+  - init: source $HOME/.dotfiles/.zshrc
 
 vscode:
   extensions:

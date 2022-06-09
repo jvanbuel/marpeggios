@@ -1,0 +1,10 @@
+
+tasks:
+  - before: . .alias
+  - init: make deps
+
+
+
+vscode:
+  extensions:
+    - marp-team.marp-vscode

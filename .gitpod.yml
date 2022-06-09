@@ -1,7 +1,6 @@
 
 tasks:
-  - before: source .alias
-  - init: make deps
+  - init: source .alias && make deps
 
 
 

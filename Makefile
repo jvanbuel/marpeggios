@@ -2,4 +2,4 @@
 
 
 deps:
-	brew bundle
+	brew install marp-cli

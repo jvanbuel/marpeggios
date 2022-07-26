@@ -126,7 +126,11 @@ Yubikey
 How does FIDO solve
 
 - Database breaches?
+    - The credentials never leave the device. The server only stores the public key. 
 - Fishing?
+    - The key is linked to a hostname. 
+- Man-in-the-Middle-Attacks (MITM)? 
+    - 
 
 ---
 
@@ -141,6 +145,10 @@ What if my authenticator gets stolen?
 => You can setup fall-back mechanisms for when the authenticator is lost (OTP, push-notification, etc.)
 
 [SO question](https://security.stackexchange.com/questions/103474/why-is-u2f-not-good-enough-to-be-used-as-authentication)
+
+---
+
+Will WebAuthn passkeys replace password managers? 
 
 ---
 
@@ -167,20 +175,5 @@ Sources:
 
 - [Does WebAuthn Signal the End of Passwords for Browsers (YouTube)](https://www.youtube.com/watch?v=S_Yxt3KJKYE)
 
-- 
+- [Yubikey key generation](https://developers.yubico.com/U2F/Protocol_details/Key_generation.html)
 
----
-
-```mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-```

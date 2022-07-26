@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant Authenticator
+    participant Client
+    participant Server
+    Client->>Server: RegistrationRequest
+    Server-->>Client: PublicKeyCredentialCreationOptions <br> { challenge, rpId, ...}
+    Client->>Authenticator: navigator.credential.create()
+    Authenticator-->>Client: PublicKeyCredential <br> { rawId, id, response, ...}
+    Client->>Server: PublicKeyCredential <br> { rawId, id, response, ...}
+    Server ->> Server: Verify credential 
+    Server -->> Client: Registration successful
